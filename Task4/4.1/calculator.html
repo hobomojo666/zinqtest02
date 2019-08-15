@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="calculator.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <title>The Zinq-ulate</title>
+</head>
+
+<body>
+
+    <div class="row" style="padding-left:5%;margin-top:5%;font-family: 'PT Sans', sans-serif;">
+        <div class="column" >
+            <h2 style="font-weight:900">ZINQ-ULATE</h2>
+            <br>
+            <h3 style="font-weight:450;">We hate jargons, paperwork...</h3>
+            <br>
+            <form style="width:75%">
+              <div>
+                <h4>Your date of birth*</h4>
+                <div class="form-group">
+                  <input type="date" class="form-control" id="dateofbirth" name="dateofbirth" min="01-01-1900">
+                </div>
+              </div>
+              <h4>Your gender*</h4>
+              <div class="form-group">
+                <input type="radio" name="radGender" id="male" value="Male" checked="checked" />
+                <label for="male">Male</label>
+                <input type="radio" name="radGender" id="female" value="Female" />
+                <label for="female">Female</label>
+                <input type="radio" name="radGender" id="other" value="Other" />
+                <label for="other">Other</label>
+              </div>
+              <h4>Do you smoke?*</h4>
+              <div class="form-group">
+                <input type="radio" name="radSmoke" id="yes" value="Yes" />
+                <label for="yes">Yes</label>
+                <input type="radio" name="radSmoke" id="no" value="No" />
+                <label for="no">No</label>
+              </div>
+              <h4>Gross income*</h4>
+              <div class="form-group">
+                <input type="number" name="grossincome" placeholder="Gross income" min="0" max="9999999">
+              </div>
+              <h4>Do you have any dependants?*</h4>
+              <div class="form-group">
+                <input type="number" name="dependants" placeholder="Dependants" min="0" max="9" style="width:50%">
+              </div>
+        </div>
+        <div class="column" style="margin-left:5%">
+            <h4>Age of youngest dependant*
+                <span style="color:blueviolet" id="demo"></span>
+              </h4>
+              <div class="slidecontainer">
+                <input type="range" min="0" max="25" value="0" class="wb-PKR-slider" id="ageRange">
+              </div>
+              <h4>Do you have a partner?*</h4>
+              <div class="form-group">
+                <input type="radio" name="radPartner" id="yes" value="Yes" />
+                <label for="yes">Yes</label>
+                <input type="radio" name="radPartner" id="no" value="No" />
+                <label for="no">No</label>
+              </div>
+              <h4>Total assets*</h4>
+              <div class="form-group">
+                <input type="number" name="totalassets" placeholder="Total assets" min="0" max="9999999">
+              </div>
+              <h4>Total liabilities*</h4>
+              <div class="form-group">
+                <input type="number" name="totalliabilities" placeholder="Total liabilities" min="0" max="9999999">
+              </div>
+              <button type="button" class="btn btn-primary" style="border-radius: 25px;" onclick="calculate()">APPLY NOW</button>
+        
+              <div id="result"></div>
+        </div>
+      </div>
+
+
+  <div >
+    
+      
+  </div>
+  <br>
+  </form>
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="calculator.js"></script>
+</body>
+
+</html>

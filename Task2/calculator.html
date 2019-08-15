@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="calculator.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <title>The Zinq-culator</title>
+  </head>
+  <body>
+    <div style="padding-left:5%;margin-top:5%;font-family: 'PT Sans', sans-serif;">
+        <h2 style="font-weight:900">THE ZINQ-CULATOR</h2>
+        <br>
+        <h3 style="font-weight:450;">Take our Zinq calculator for a spin... and see if the numbers add up for you: </h3>
+        <br>
+        
+       
+
+
+
+        <div class="slidecontainer">
+            <input type="range" min="250000" max="9999999" value="1200000" class="wb-PKR-slider" id="myRange">
+            
+          </div>
+          <br>
+          <div class="toptext">
+              <h4>Loan Amount: <span style="color:blueviolet">$</span></span><span id="demo" style="color:blueviolet"></span></h4>
+             </div>
+
+          <br>
+          <form style="width:75%">
+              <div class="form-group">
+              <label> Term of Loan </label>
+                <input type="text" class="form-control" id="formGroupLoan" placeholder="Term of loan(in years)"  >
+              </div>
+              <div class="form-group">
+              <label>Interest Rate ( in % ) </label>
+                <input type="text" class="form-control" id="formGroupInterest" placeholder="Interest rate(%)" >
+              </div>
+              <div class="form-group">
+    <label for="exampleFormControlSelect1">Payment Frequency</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Weekly</option>
+      <option>Fortnightly</option>
+      <option>Monthly</option>
+      <option>Quarterly</option>
+      <option>Half Year</option>
+      <option>Year</option>
+    </select>
+  </div>
+            </form>
+
+        <h4> Estimated monthly repayment:
+        </p>
+        <p><span id="monthlyRepayment" style="color:blueviolet"></span></p>
+        <h4>Total cost of loan(over 30 years):
+        </p>
+        <p><span id="totalLoan" style="color:blueviolet"></span></p>
+    
+        <button type="button" class="btn btn-primary" style="border-radius: 25px;">APPLY NOW</button>
+        <button type="button" class="btn btn-primary" style="border-radius: 25px;" onclick="graphReady()">See Graph</button>
+    
+
+    </div>
+
+    <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="calculator.js"></script>
+    <script src="highchart.js"></script>
+
+  </body>
+</html>
